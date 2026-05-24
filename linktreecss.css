@@ -1,0 +1,117 @@
+/* 1. Reset i ustawienia bazowe */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #0f172a; 
+    background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 2. Główny kontener (Karta) */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff; 
+    padding: 40px 25px;
+    border-radius: 40px; 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* 3. Sekcja profilu */
+header {
+    margin-bottom: 32px;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f1f5f9;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* 4. Przyciski z linkami */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-card {
+    display: block;
+    padding: 16px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Specyficzny styl dla GitHuba, żeby go wyróżnić */
+.github-btn {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+}
+
+.link-card:hover {
+    background-color: #334155;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.link-card:active {
+    transform: scale(0.98);
+}
+
+/* 5. Sekcja ikon społecznościowych */
+.social-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+}
+
+.social-icon:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
